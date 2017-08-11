@@ -1,0 +1,15 @@
+de\adesso\Repository\BookRepository.class
+de\adesso\model\Book.class
+de\adesso\model\Person.class
+de\adesso\model\Bibliothikar.class
+de\adesso\model\Berechtigung.class
+de\adesso\Repository\BibliothikarRepository.class
+de\adesso\model\EntityBase.class
+de\adesso\model\Kunde.class
+de\adesso\Repository\KundenRepository.class
+de\adesso\model\Bereich.class
+de\adesso\model\Verlag.class
+de\adesso\model\Geschlecht.class
+de\adesso\Repository\VerlagRepository.class
+de\adesso\model\Book_Verlag.class
+de\adesso\Repository\PersonRepository.class
