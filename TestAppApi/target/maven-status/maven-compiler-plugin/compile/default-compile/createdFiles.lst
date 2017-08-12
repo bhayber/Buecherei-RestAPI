@@ -1,6 +1,5 @@
 de\adesso\start\Konfig.class
 de\adesso\Controller\HelloController.class
-de\adesso\com\mkyong\editor\EditorBean.class
 de\adesso\Controller\BuchController.class
 de\adesso\Controller\KundenController.class
 de\adesso\Controller\PersonController.class
