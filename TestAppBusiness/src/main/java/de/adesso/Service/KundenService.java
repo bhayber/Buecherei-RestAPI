@@ -2,15 +2,12 @@ package de.adesso.Service;
 
 import de.adesso.Repository.KundenRepository;
 import de.adesso.Repository.PersonRepository;
-import de.adesso.model.Geschlecht;
 import de.adesso.model.Kunde;
-import de.adesso.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.Calendar;
-import java.util.Date;
 
 @Component
 public class KundenService {
@@ -59,6 +56,20 @@ public class KundenService {
         return "Kunde succesfully deleted!";
     }
 
+    public String deleteByAusweisNr(String ausweisnr) {
+        try {
+            Kunde FoundKunde = kundenRepository.findByAusweisnr(ausweisnr);
+            if (FoundKunde != null)
+                kundenRepository.delete(FoundKunde);
+            else
+                return ("Kunde NOT FOUND. Please Enter valid AusweisNr");
+        } catch (Exception ex) {
+            return "Error deleting the Kunde:" + ex.toString();
+        }
+        return "Kunde succesfully deleted!";
+    }
+
+
     public Iterable<Kunde> findKundenByEmail(String email) {
         return kundenRepository.findByEmail(email);
     }
@@ -87,10 +98,10 @@ public class KundenService {
     }
 
     public Kunde getKundeByNameAndEmail(String email, String name) {
-        return (Kunde) kundenRepository.findByEmailAndName(email, name);
+        return kundenRepository.findByEmailAndName(email, name);
     }
 
-    public Iterable<Kunde> getPersonsByName(String kundenName) {
+    public Iterable<Kunde> getKundenByName(String kundenName) {
         return kundenRepository.findKundenByName(kundenName);
     }
 

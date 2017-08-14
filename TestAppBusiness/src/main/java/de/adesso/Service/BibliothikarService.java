@@ -1,18 +1,13 @@
 package de.adesso.Service;
 
 import de.adesso.Repository.BibliothikarRepository;
-import de.adesso.Repository.KundenRepository;
 import de.adesso.Repository.PersonRepository;
 import de.adesso.model.Bereich;
 import de.adesso.model.Bibliothikar;
 import de.adesso.model.Geschlecht;
-import de.adesso.model.Kunde;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-
-import java.util.Calendar;
-import java.util.Date;
 
 @Component
 public class BibliothikarService {
@@ -58,7 +53,6 @@ public class BibliothikarService {
         }
         return "Bibliothikar succesfully deleted!";
     }
-
 
     public String updateBibliothikar(String uuid, String objektAdresse, Bereich bereich) {
         try {

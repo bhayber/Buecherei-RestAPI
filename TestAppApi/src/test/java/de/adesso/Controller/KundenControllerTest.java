@@ -16,7 +16,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -24,8 +23,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
-import static org.springframework.test.web.client.match.MockRestRequestMatchers.content;
+import static org.junit.Assert.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -33,7 +31,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 @WebAppConfiguration
 @SpringBootTest(classes = App.class)
 public class KundenControllerTest {
-
 
     @Autowired
     WebApplicationContext context;
@@ -45,8 +42,9 @@ public class KundenControllerTest {
         mvc = MockMvcBuilders.webAppContextSetup(context).build();
     }
 
+    //create Kunde Test
     @Test
-    public void createKunde() throws Exception {
+    public void test1() throws Exception {
         Kunde newKunde = new Kunde();
         newKunde.setAusweisnr("AB-CX-22-33-22-23");
         newKunde.setName("Dörte");
@@ -63,21 +61,10 @@ public class KundenControllerTest {
         assertThat(sol, new Contains("Kunde succesfully created with id"));
     }
 
+    //get all Kunden Test
     @Test
-    public void delete() throws Exception {
-    }
-
-    @Test
-    public void getKundebyNameAndEmail() throws Exception {
-    }
-
-    @Test
-    public void updateKunde() throws Exception {
-    }
-
-    @Test
-    public void getAllKunden() throws Exception {
-                ObjectMapper mapper = new ObjectMapper();
+    public void test2() throws Exception {
+        ObjectMapper mapper = new ObjectMapper();
 
         String kundenlist =   mvc.perform(get("http://localhost:9000/kunde/getall"))
                 .andExpect(
@@ -90,6 +77,25 @@ public class KundenControllerTest {
         list.forEach(kunde -> System.out.println(kunde.getName() + " : " + kunde.getAusweisnr()));
         assert(list.size() > 0);
     }
+
+    //Delete Kunde By AusweisNr
+    @Test
+    public void test3() throws Exception {
+
+        String sol = mvc.perform(MockMvcRequestBuilders.request(HttpMethod.DELETE
+                , "http://localhost:9000/kunde//deleteKundeByAusweisNr/{ausweisnr}", "AB-CX-22-33-22-23")
+        ).andReturn().getResponse().getContentAsString();
+        assertThat(sol, new Contains("Kunde succesfully deleted!"));
+    }
+
+    @Test
+    public void getKundebyNameAndEmail() throws Exception {
+    }
+
+    @Test
+    public void updateKunde() throws Exception {
+    }
+
 
     @Test
     public void getKundeById() throws Exception {

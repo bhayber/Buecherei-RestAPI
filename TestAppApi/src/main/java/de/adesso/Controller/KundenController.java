@@ -1,9 +1,7 @@
 package de.adesso.Controller;
 
 import de.adesso.Service.KundenService;
-import de.adesso.Service.PersonService;
 import de.adesso.model.Kunde;
-import de.adesso.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,15 +27,27 @@ public class KundenController {
         return kundenService.delete(id);
     }
 
-    /**
-     * GET /get-by-email  --> Return the id for the Person having the passed
-     * email.
-     */
+
+    @DeleteMapping("/deleteKundeByAusweisNr/{ausweisnr}")
+    @ResponseBody
+    public String deleteByAusweisNr(@PathVariable String ausweisnr) {
+        return kundenService.deleteByAusweisNr(ausweisnr);
+    }
+
+
     @GetMapping("/getKundebyNameAndEmail")
     @ResponseBody
     public Kunde getKundebyNameAndEmail(Kunde kunde) {
         return kundenService.getKundeByNameAndEmail(kunde.getEmail(),kunde.getName());
     }
+
+
+    @GetMapping("/getKundebyAusweisNr")
+    @ResponseBody
+    public Kunde getKundebyAusweisNr(String ausweisnr) {
+        return kundenService.getKundeByAusweisnr(ausweisnr);
+    }
+
 
     /**
      * GET /update  --> Update the email and the name for the Person in the

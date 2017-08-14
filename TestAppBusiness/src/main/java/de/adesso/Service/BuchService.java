@@ -1,9 +1,11 @@
 package de.adesso.Service;
 
-import de.adesso.Repository.*;
-import de.adesso.model.*;
+import de.adesso.Repository.BookRepository;
+import de.adesso.Repository.VerlagRepository;
+import de.adesso.model.Book;
+import de.adesso.model.Book_Verlag;
+import de.adesso.model.Verlag;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
@@ -45,9 +47,32 @@ public class BuchService {
         return "Book succesfully created with id = " + newBook.getId();
     }
 
-    public Set<Book> getAllBooks(){
-    return (Set<Book>) bookRepository.findAll();
+
+    public String addVerlagToBook(Book book, Verlag verlag) {
+
+        try {
+            Book foundBook = bookRepository.findById(book.getId());
+            Verlag foundVerlag = verlagRepository.findById(verlag.getId());
+
+            Book_Verlag bv = new Book_Verlag();
+            Set<Book_Verlag> book_verlags = new HashSet<Book_Verlag>();
+            book_verlags.addAll(foundBook.getBookVerlag());
+            bv.setBook(foundBook);
+            bv.setVerlag(foundVerlag);
+            book_verlags.add(bv);
+            foundBook.setBookVerlag(book_verlags);
+            bookRepository.save(foundBook);
+
+        } catch (Exception ex) {
+            return ex.toString();
+        }
+        return "Buch erfolgreich zugeordnet ! ";
     }
+
+    public Set<Book> getAllBooks(){
+        return (Set<Book>) bookRepository.findAll();
+    }
+
 
     public Set<Book> getAllBooksNotRentedByCustomer() {
         Set<Book> filtBookList = (Set<Book>) bookRepository.findAll();
