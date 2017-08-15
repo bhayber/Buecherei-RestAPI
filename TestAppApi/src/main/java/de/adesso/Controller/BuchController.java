@@ -10,20 +10,20 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/buch")
 public class BuchController {
-	  
-	  @Autowired
-	  private BuchService buchService;
+
+    @Autowired
+    private BuchService buchService;
 
     @PostMapping("/createBuchWithVerlag")
     @ResponseBody
-	  public String createBuchWithVerlag(Book buch, Verlag verlag) {
-	    return buchService.createBuchWithVerlag(buch,verlag);
-	  }
+    public String createBuchWithVerlag(Book buch, Verlag verlag) {
+        return buchService.createBuchWithVerlag(buch, verlag);
+    }
 
     @PostMapping("/createBuch")
     @ResponseBody
     public String createBuch(Book buch, Verlag verlag) {
-        return buchService.createBuch(buch,verlag);
+        return buchService.createBuch(buch, verlag);
     }
 
     @GetMapping("/getall")
@@ -31,7 +31,6 @@ public class BuchController {
     public Iterable<Book> getAllBooks() {
         return buchService.getAllBooks();
     }
-
 
     @GetMapping("/getAllBooksNotRented")
     @ResponseBody

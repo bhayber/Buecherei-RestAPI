@@ -69,13 +69,14 @@ public class BuchService {
         return "Buch erfolgreich zugeordnet ! ";
     }
 
-    public Set<Book> getAllBooks(){
-        return (Set<Book>) bookRepository.findAll();
+    public Iterable<Book> getAllBooks() {
+        return bookRepository.findAll();
     }
 
 
     public Set<Book> getAllBooksNotRentedByCustomer() {
         Set<Book> filtBookList = (Set<Book>) bookRepository.findAll();
+
         for (Book curBook:  filtBookList
              )
             if (curBook.getPerson() != null) {
