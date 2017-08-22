@@ -38,15 +38,21 @@ public class KundenController {
     @GetMapping("/getKundebyNameAndEmail")
     @ResponseBody
     public Kunde getKundebyNameAndEmail(Kunde kunde) {
-        return kundenService.getKundeByNameAndEmail(kunde.getEmail(),kunde.getName());
+        return kundenService.getKundeByNameAndEmail(kunde.getEmail(), kunde.getName());
     }
-
 
     @GetMapping("/getKundebyAusweisNr")
     @ResponseBody
     public Kunde getKundebyAusweisNr(String ausweisnr) {
         return kundenService.getKundeByAusweisnr(ausweisnr);
     }
+
+    @GetMapping("/getKundebyEmail")
+    @ResponseBody
+    public Kunde getKundebyEmail(String email) {
+        return kundenService.getKundeByEmail(email);
+    }
+
 
 
     /**
@@ -55,7 +61,8 @@ public class KundenController {
      */
     @PutMapping("/updateKunde")
     @ResponseBody
-    public String updateKunde(Kunde kunde) {return kundenService.updateKunde(kunde);
+    public String updateKunde(Kunde kunde) {
+        return kundenService.updateKunde(kunde);
     }
 
     /**
@@ -67,14 +74,13 @@ public class KundenController {
         return kundenService.getAllKunden();
     }
 
+
     @GetMapping("/{id}")
     @ResponseBody
     public Kunde getKundeById(@PathVariable("id") String id) {
         Kunde kunde = kundenService.getKundeByID(id);
         return kunde;
     }
-
-
 
 
 }

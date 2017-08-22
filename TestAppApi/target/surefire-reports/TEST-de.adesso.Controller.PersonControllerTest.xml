@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.adesso.Controller.PersonControllerTest" time="0.059" tests="4" errors="0" skipped="0" failures="0">
+<testsuite name="de.adesso.Controller.PersonControllerTest" time="0.063" tests="4" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
@@ -64,8 +64,35 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="createPersonTest" classname="de.adesso.Controller.PersonControllerTest" time="0.012"/>
-  <testcase name="getAllPersonTest" classname="de.adesso.Controller.PersonControllerTest" time="0.005"/>
-  <testcase name="updatePersonTest" classname="de.adesso.Controller.PersonControllerTest" time="0.015"/>
-  <testcase name="getPersonTest" classname="de.adesso.Controller.PersonControllerTest" time="0.027"/>
+  <testcase name="createPersonTest" classname="de.adesso.Controller.PersonControllerTest" time="0.016"/>
+  <testcase name="getAllPersonTest" classname="de.adesso.Controller.PersonControllerTest" time="0"/>
+  <testcase name="updatePersonTest" classname="de.adesso.Controller.PersonControllerTest" time="0.031">
+    <failure message="&#10;Expected: contains(&quot;Person succesfully updated!&quot;)&#10;     but: was &quot;Error updating the Person: java.lang.NullPointerException&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: contains("Person succesfully updated!")
+     but: was "Error updating the Person: java.lang.NullPointerException"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at de.adesso.Controller.PersonControllerTest.updatePersonTest(PersonControllerTest.java:115)
+</failure>
+    <system-out><![CDATA[2017-08-21 15:35:35.968  INFO 13240 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2017-08-21 15:35:35.968  INFO 13240 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-08-21 15:35:35.983  INFO 13240 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 15 ms
+Hibernate: select person0_.id as id1_4_, person0_.adresse as adresse2_4_, person0_.email as email3_4_, person0_.geb_datum as geb_datu4_4_, person0_.geschlecht as geschlec5_4_, person0_.name as name6_4_, person0_.password as password7_4_, person0_.telmobile as telmobil8_4_, person0_.austritt as austritt1_3_, person0_.ausweisnr as ausweisn2_3_, person0_.mitglied_seit as mitglied3_3_, person0_.bereich as bereich1_0_, person0_.objekt_adresse as objekt_a2_0_, person0_.clazz_ as clazz_ from ( select id, adresse, email, geb_datum, geschlecht, name, password, telmobile, null as austritt, null as ausweisnr, null as mitglied_seit, null as bereich, null as objekt_adresse, 0 as clazz_ from demo_person union select id, adresse, email, geb_datum, geschlecht, name, password, telmobile, austritt, ausweisnr, mitglied_seit, null as bereich, null as objekt_adresse, 1 as clazz_ from demo_kunde union select id, adresse, email, geb_datum, geschlecht, name, password, telmobile, null as austritt, null as ausweisnr, null as mitglied_seit, bereich, objekt_adresse, 2 as clazz_ from demo_bibliothikar ) person0_ where person0_.id=?
+]]></system-out>
+  </testcase>
+  <testcase name="getPersonTest" classname="de.adesso.Controller.PersonControllerTest" time="0.016">
+    <failure message="Content type not set" type="java.lang.AssertionError">java.lang.AssertionError: Content type not set
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:35)
+	at org.springframework.test.util.AssertionErrors.assertTrue(AssertionErrors.java:65)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers$1.match(ContentResultMatchers.java:82)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at de.adesso.Controller.PersonControllerTest.getPersonTest(PersonControllerTest.java:95)
+</failure>
+    <system-out><![CDATA[2017-08-21 15:35:35.999  INFO 13240 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2017-08-21 15:35:35.999  INFO 13240 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-08-21 15:35:35.999  INFO 13240 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+Hibernate: select person0_.id as id1_4_, person0_.adresse as adresse2_4_, person0_.email as email3_4_, person0_.geb_datum as geb_datu4_4_, person0_.geschlecht as geschlec5_4_, person0_.name as name6_4_, person0_.password as password7_4_, person0_.telmobile as telmobil8_4_, person0_.austritt as austritt1_3_, person0_.ausweisnr as ausweisn2_3_, person0_.mitglied_seit as mitglied3_3_, person0_.bereich as bereich1_0_, person0_.objekt_adresse as objekt_a2_0_, person0_.clazz_ as clazz_ from ( select id, adresse, email, geb_datum, geschlecht, name, password, telmobile, null as austritt, null as ausweisnr, null as mitglied_seit, null as bereich, null as objekt_adresse, 0 as clazz_ from demo_person union select id, adresse, email, geb_datum, geschlecht, name, password, telmobile, austritt, ausweisnr, mitglied_seit, null as bereich, null as objekt_adresse, 1 as clazz_ from demo_kunde union select id, adresse, email, geb_datum, geschlecht, name, password, telmobile, null as austritt, null as ausweisnr, null as mitglied_seit, bereich, objekt_adresse, 2 as clazz_ from demo_bibliothikar ) person0_ where person0_.id=?
+]]></system-out>
+  </testcase>
 </testsuite>

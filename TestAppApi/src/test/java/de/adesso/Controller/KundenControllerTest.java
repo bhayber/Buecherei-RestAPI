@@ -66,21 +66,22 @@ public class KundenControllerTest {
     public void test2() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
 
-        String kundenlist =   mvc.perform(get("http://localhost:9000/kunde/getall"))
+        String kundenlist = mvc.perform(get("http://localhost:9000/kunde/getall"))
                 .andExpect(
                         MockMvcResultMatchers.content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
                 .andReturn().getResponse().getContentAsString();
 
-        List<Kunde> list = mapper.readValue(kundenlist, new TypeReference<List<Kunde>>(){});
+        List<Kunde> list = mapper.readValue(kundenlist, new TypeReference<List<Kunde>>() {
+        });
 
         System.out.println("Die Liste aller Kunden (name + ausweisnr): ");
         list.forEach(kunde -> System.out.println(kunde.getName() + " : " + kunde.getAusweisnr()));
-        assert(list.size() > 0);
+        assert (list.size() > 0);
     }
 
     //Delete Kunde By AusweisNr
     @Test
-    public void test3() throws Exception {
+    public void test4() throws Exception {
 
         String sol = mvc.perform(MockMvcRequestBuilders.request(HttpMethod.DELETE
                 , "http://localhost:9000/kunde//deleteKundeByAusweisNr/{ausweisnr}", "AB-CX-22-33-22-23")
@@ -98,6 +99,15 @@ public class KundenControllerTest {
 
 
     @Test
-    public void getKundeById() throws Exception {
+    public void test3() throws Exception {
+        ObjectMapper mapper = new ObjectMapper();
+        String sol = mvc.perform(MockMvcRequestBuilders.request(HttpMethod.GET
+                , "http://localhost:9000/kunde/getKundebyEmail/").param("email", "Dörte@email.de")
+        ).andReturn().getResponse().getContentAsString();
+        Kunde kunde = mapper.readValue(sol, Kunde.class);
+        assertThat(kunde.getEmail(), new Contains("Dörte@email.de"));
+
     }
+
+
 }

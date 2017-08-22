@@ -8,12 +8,12 @@ import java.util.Set;
 
 
 @Repository
-public interface VerlagRepository extends JpaRepository<Verlag,Integer>{
+public interface VerlagRepository extends JpaRepository<Verlag, Integer> {
 
- public Verlag findById(String id);
+    Verlag findById(String id);
 
- public Set<Verlag> findVerlaegeByNameOrderByNameDesc(String name);
+    Set<Verlag> findVerlaegeByNameOrderByNameDesc(String name);
 
- public Verlag findVerlagByName(String name);
+    Verlag findVerlagByName(String name);
 
 }

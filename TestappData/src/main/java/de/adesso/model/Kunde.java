@@ -1,20 +1,22 @@
 package de.adesso.model;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Date;
 
 @Entity
 @Table(name = "demo_Kunde")
-public class Kunde extends Person{
+public class Kunde extends Person {
 
     //BÜCHEREI AUSWEIS NR
-    @Column(name = "ausweisnr", nullable = false)
+    @Column(name = "ausweisnr", nullable = false, unique = true)
     private String ausweisnr;
 
-    @Column(name= "mitgliedSeit")
+    @Column(name = "mitgliedSeit")
     private Date mitgliedSeit;
 
-    @Column(name= "austritt")
+    @Column(name = "austritt")
     private Date austritt;
 
     public String getAusweisnr() {

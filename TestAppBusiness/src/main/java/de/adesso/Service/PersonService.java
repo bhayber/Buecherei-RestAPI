@@ -20,7 +20,7 @@ public class PersonService {
         this.personRepository = personRepository;
     }
 
-    public String createPerson(String name,String email, String phoneNumber, Geschlecht geschlecht, String adresse) {
+    public String createPerson(String name, String email, String phoneNumber, Geschlecht geschlecht, String adresse) {
         Person newPerson = new Person();
         try {
             newPerson.setEmail(email);
@@ -34,6 +34,7 @@ public class PersonService {
         }
         return "Person succesfully created with id = " + newPerson.getId();
     }
+
     public String createPerson(Person person) {
         try {
             Person newPerson = new Person(person);
@@ -44,7 +45,7 @@ public class PersonService {
         return "Person succesfully created with id = " + person.getId();
     }
 
-    public String delete(String uuid){
+    public String delete(String uuid) {
         try {
             Person FoundPerson = personRepository.findPersonById(uuid);
             if (FoundPerson != null)
@@ -57,7 +58,22 @@ public class PersonService {
         return "Person succesfully deleted!";
     }
 
-    public Iterable<Person> findPersonsByEmail(String email) {
+
+    public String deleteByEmail(String email) {
+        try {
+            Person FoundPerson = personRepository.findPersonByEmail(email);
+            if (FoundPerson != null)
+                personRepository.delete(FoundPerson);
+            else
+                return ("Person NOT FOUND. Please Enter valid Person Email");
+        } catch (Exception ex) {
+            return "Error deleting the Person:" + ex.toString();
+        }
+        return "Person succesfully deleted!";
+    }
+
+
+    public Person findPersonByEmail(String email) {
         return personRepository.findByEmail(email);
     }
 
@@ -65,6 +81,7 @@ public class PersonService {
         try {
             Person FoundPerson = personRepository.findPersonById(person.getId());
             FoundPerson.setEmail(person.getEmail());
+            FoundPerson.setAdresse(person.getAdresse());
             FoundPerson.setName(person.getName());
             FoundPerson.setTelmobile(person.getTelmobile());
             FoundPerson.setGeschlecht(person.getGeschlecht());
@@ -75,19 +92,19 @@ public class PersonService {
         return "Person succesfully updated!";
     }
 
-    public Person getPersonByPhone(String phone){
+    public Person getPersonByPhone(String phone) {
         return personRepository.findByTelmobile(phone);
     }
 
-    public Person getPersonByID(String id){
+    public Person getPersonByID(String id) {
         return personRepository.findPersonById(id);
     }
 
-    public Person getPersonByNameAndEmail(String email,String name){
-        return personRepository.findByEmailAndName(email,name);
+    public Person getPersonByNameAndEmail(String email, String name) {
+        return personRepository.findByEmailAndName(email, name);
     }
 
-    public Iterable<Person> getPersonsByName(String PersonName){
+    public Iterable<Person> getPersonsByName(String PersonName) {
         return personRepository.findPersonsByName(PersonName);
     }
 

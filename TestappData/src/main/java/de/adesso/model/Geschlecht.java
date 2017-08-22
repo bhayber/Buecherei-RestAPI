@@ -1,6 +1,6 @@
 package de.adesso.model;
 
-public enum Geschlecht{
+public enum Geschlecht {
     MAENLICH,
     WEIBLICH
 

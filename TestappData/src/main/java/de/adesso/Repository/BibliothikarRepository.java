@@ -9,10 +9,10 @@ import java.util.Set;
 
 
 @Repository
-public interface BibliothikarRepository extends JpaRepository<Bibliothikar,Integer>{
-    
- public Bibliothikar findById(String id);
+public interface BibliothikarRepository extends JpaRepository<Bibliothikar, Integer> {
 
- public Set<Bibliothikar> findByBereich(Bereich bereich);
+    Bibliothikar findById(String id);
+
+    Set<Bibliothikar> findByBereich(Bereich bereich);
 
 }

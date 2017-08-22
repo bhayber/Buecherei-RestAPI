@@ -1,14 +1,9 @@
 package de.adesso.Controller;
 
 import de.adesso.Service.PersonService;
-import de.adesso.model.Geschlecht;
 import de.adesso.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.util.UriComponentsBuilder;
 
 
 @RestController
@@ -33,13 +28,22 @@ public class PersonController {
     }
 
     /**
+     * GET /delete  --> Delete the Person having the passed id.
+     */
+    @DeleteMapping("/deletePersonByMail")
+    @ResponseBody
+    public String deleteByEmail(String email) {
+        return personService.deleteByEmail(email);
+    }
+
+    /**
      * GET /get-by-email  --> Return the id for the Person having the passed
      * email.
      */
-    @GetMapping("/get-Persons-by-email")
+    @GetMapping("/getPersonByEmail")
     @ResponseBody
-    public Iterable<Person> getPersonsByEmail(String email) {
-        return personService.findPersonsByEmail(email);
+    public Person getPersonByEmail(String email) {
+        return personService.findPersonByEmail(email);
     }
 
     /**

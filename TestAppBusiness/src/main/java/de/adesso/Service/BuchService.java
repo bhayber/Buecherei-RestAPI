@@ -77,16 +77,16 @@ public class BuchService {
     public Set<Book> getAllBooksNotRentedByCustomer() {
         Set<Book> filtBookList = (Set<Book>) bookRepository.findAll();
 
-        for (Book curBook:  filtBookList
-             )
+        for (Book curBook : filtBookList
+                )
             if (curBook.getPerson() != null) {
                 filtBookList.remove(curBook);
             }
-            return filtBookList;
+        return filtBookList;
     }
 
-    public Book getBookByID(String bookID){
-    return bookRepository.findById(bookID);
+    public Book getBookByID(String bookID) {
+        return bookRepository.findById(bookID);
     }
 
     public String createBuch(Book book, Verlag verlag) {
@@ -108,7 +108,6 @@ public class BuchService {
         }
         return "Book succesfully created with id = " + newBook.getId();
     }
-
 
 
 }

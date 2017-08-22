@@ -4,13 +4,13 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "demo_bibliothikar")
-public class Bibliothikar extends Person{
+public class Bibliothikar extends Person {
 
     @Column(name = "objektAdresse")
     private String objektAdresse;
 
     @Enumerated(value = EnumType.ORDINAL)
-    @Column(name= "bereich")
+    @Column(name = "bereich")
     private Bereich bereich;
 
     public String getObjektAdresse() {
@@ -28,8 +28,6 @@ public class Bibliothikar extends Person{
     public void setBereich(Bereich bereich) {
         this.bereich = bereich;
     }
-
-
 
 
 }

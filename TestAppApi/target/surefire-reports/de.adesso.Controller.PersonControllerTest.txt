@@ -1,4 +1,21 @@
 -------------------------------------------------------------------------------
 Test set: de.adesso.Controller.PersonControllerTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec - in de.adesso.Controller.PersonControllerTest
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.079 sec <<< FAILURE! - in de.adesso.Controller.PersonControllerTest
+updatePersonTest(de.adesso.Controller.PersonControllerTest)  Time elapsed: 0.031 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: contains("Person succesfully updated!")
+     but: was "Error updating the Person: java.lang.NullPointerException"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at de.adesso.Controller.PersonControllerTest.updatePersonTest(PersonControllerTest.java:115)
+
+getPersonTest(de.adesso.Controller.PersonControllerTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError: Content type not set
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:35)
+	at org.springframework.test.util.AssertionErrors.assertTrue(AssertionErrors.java:65)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers$1.match(ContentResultMatchers.java:82)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at de.adesso.Controller.PersonControllerTest.getPersonTest(PersonControllerTest.java:95)
+

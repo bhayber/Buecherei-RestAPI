@@ -1,34 +1,33 @@
 package de.adesso.model;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.Date;
 import java.util.Set;
 
 @Entity
 @Table(name = "demo_book")
-public class Book extends EntityBase{
+public class Book extends EntityBase {
 
-    @Column(name = "titel",nullable = false)
-	private String titel;
-	
-	@Column(name= "isbnr", nullable = false)
-	private String isbnr;
+    @Column(name = "titel", nullable = false)
+    private String titel;
 
-    @Column(name= "abgabeDatum")
-	private Date abgabeDatum;
+    @Column(name = "isbnr", nullable = false)
+    private String isbnr;
 
-    @Column(name= "ausleihDatum")
+    @Column(name = "abgabeDatum")
+    private Date abgabeDatum;
+
+    @Column(name = "ausleihDatum")
     private Date ausleihDatum;
 
-    @Column(name= "abgabefristDatum")
+    @Column(name = "abgabefristDatum")
     private Date abgabefristDatum;
 
     @ManyToOne
     @JoinColumn(name = "FK_User")
     private Person person;
 
-    @OneToMany(mappedBy = "book",cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Book_Verlag> bookVerlag;
 
     public Date getAbgabefristDatum() {
