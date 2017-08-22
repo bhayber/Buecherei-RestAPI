@@ -16,7 +16,7 @@ public abstract class EntityBase implements Serializable {
     @Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
-    @Column(columnDefinition = "CHAR(255)", unique = true)
+    @Column(unique = true)
     private String id;
 
     public String getId() {

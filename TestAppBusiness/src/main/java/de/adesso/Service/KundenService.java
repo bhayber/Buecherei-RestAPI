@@ -19,7 +19,6 @@ public class KundenService {
     @Autowired
     private PersonRepository personRepository;
 
-
     public KundenService(KundenRepository kundenRepository) {
         this.kundenRepository = kundenRepository;
     }
@@ -72,10 +71,6 @@ public class KundenService {
         return "Kunde succesfully deleted!";
     }
 
-    public Kunde findKundeByEmail(String email) {
-        return kundenRepository.findByEmail(email);
-    }
-
     public String updateKunde(Kunde kunde) {
         try {
             Kunde foundKunde = kundenRepository.findById(kunde.getId());
@@ -112,6 +107,6 @@ public class KundenService {
     }
 
     public Iterable<Kunde> getAllKunden() {
-        return kundenRepository.findAllKunden();
+        return kundenRepository.findAll();
     }
 }

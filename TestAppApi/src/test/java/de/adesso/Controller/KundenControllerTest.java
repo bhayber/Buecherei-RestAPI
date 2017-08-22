@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -30,6 +31,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 @ContextConfiguration
 @WebAppConfiguration
 @SpringBootTest(classes = App.class)
+@ActiveProfiles("prod")
 public class KundenControllerTest {
 
     @Autowired
@@ -89,15 +91,7 @@ public class KundenControllerTest {
         assertThat(sol, new Contains("Kunde succesfully deleted!"));
     }
 
-    @Test
-    public void getKundebyNameAndEmail() throws Exception {
-    }
-
-    @Test
-    public void updateKunde() throws Exception {
-    }
-
-
+    //Get Kunde By his email Test
     @Test
     public void test3() throws Exception {
         ObjectMapper mapper = new ObjectMapper();
