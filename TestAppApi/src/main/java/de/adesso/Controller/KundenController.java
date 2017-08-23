@@ -54,7 +54,6 @@ public class KundenController {
     }
 
 
-
     /**
      * GET /update  --> Update the email and the name for the Person in the
      * database having the passed id.

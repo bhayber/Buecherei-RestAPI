@@ -34,7 +34,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ContextConfiguration
 @WebAppConfiguration
 @SpringBootTest(classes = App.class)
-@ActiveProfiles("prod")
+@ActiveProfiles("dev")
 public class PersonControllerTest {
 
     private String createdID;

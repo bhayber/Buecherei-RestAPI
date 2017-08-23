@@ -31,7 +31,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 @ContextConfiguration
 @WebAppConfiguration
 @SpringBootTest(classes = App.class)
-@ActiveProfiles("prod")
+@ActiveProfiles("dev")
 public class KundenControllerTest {
 
     @Autowired

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: de.adesso.Controller.HelloControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.277 sec - in de.adesso.Controller.HelloControllerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.818 sec - in de.adesso.Controller.HelloControllerTest
