@@ -30,6 +30,7 @@ public class KundenService {
         PasswordMaker passwordMaker = new PasswordMaker();
         if (foundKunde != null) throw new EntityExistsException("Kunde mit der Email existiert bereits");
         try {
+            newKunde.setGebDatum(kunde.getGebDatum());
             newKunde.setEmail(kunde.getEmail());
             newKunde.setName(kunde.getName());
             newKunde.setTelmobile(kunde.getTelmobile());
@@ -74,10 +75,10 @@ public class KundenService {
     public String updateKunde(Kunde kunde) {
         try {
             Kunde foundKunde = kundenRepository.findById(kunde.getId());
-            foundKunde.setEmail(kunde.getEmail());
-            foundKunde.setName(kunde.getName());
-            foundKunde.setTelmobile(kunde.getTelmobile());
-            foundKunde.setGeschlecht(kunde.getGeschlecht());
+            foundKunde.setEmail(kunde.getEmail() == null ? foundKunde.getEmail() : kunde.getEmail());
+            foundKunde.setName(kunde.getName() == null ? foundKunde.getName() : kunde.getName());
+            foundKunde.setAdresse(kunde.getAdresse() == null ? foundKunde.getAdresse() : kunde.getAdresse());
+            foundKunde.setTelmobile(kunde.getTelmobile() == null ? foundKunde.getTelmobile() : kunde.getTelmobile());
             foundKunde.setAustritt(kunde.getAustritt());
             kundenRepository.save(foundKunde);
         } catch (Exception ex) {

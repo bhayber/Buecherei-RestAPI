@@ -2,6 +2,7 @@ package de.adesso.Controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import de.adesso.model.Geschlecht;
 import de.adesso.model.Kunde;
 import de.adesso.start.App;
 import org.junit.Before;
@@ -27,6 +28,8 @@ import java.util.List;
 import static org.junit.Assert.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
+
+//Die Tests laufen in der eingebeteten Derby Datenbank
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
 @WebAppConfiguration
@@ -53,11 +56,13 @@ public class KundenControllerTest {
         newKunde.setEmail("Dörte@email.de");
         newKunde.setAdresse("Siemensstrasse 12 60489 Frankfurt");
         newKunde.setTelmobile("069 29 29 11");
-
+        newKunde.setGeschlecht(Geschlecht.WEIBLICH);
         String sol = mvc.perform(MockMvcRequestBuilders.request(HttpMethod.POST
                 , "http://localhost:9000/kunde/createKunde").param("name", newKunde.getName()).param("adresse", newKunde.getAdresse())
                 .param("email", newKunde.getEmail())
                 .param("ausweisnr", newKunde.getAusweisnr())
+                .param("geschlecht", newKunde.getGeschlecht().name())
+                .param("gebDatum", "30/12/1984")
         ).
                 andReturn().getResponse().getContentAsString();
         assertThat(sol, new Contains("Kunde succesfully created with id"));
@@ -86,7 +91,7 @@ public class KundenControllerTest {
     public void test4() throws Exception {
 
         String sol = mvc.perform(MockMvcRequestBuilders.request(HttpMethod.DELETE
-                , "http://localhost:9000/kunde//deleteKundeByAusweisNr/{ausweisnr}", "AB-CX-22-33-22-23")
+                , "http://localhost:9000/kunde/deleteKundeByAusweisNr/{ausweisnr}", "AB-CX-22-33-22-23")
         ).andReturn().getResponse().getContentAsString();
         assertThat(sol, new Contains("Kunde succesfully deleted!"));
     }

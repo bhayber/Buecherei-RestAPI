@@ -14,7 +14,7 @@ public class KundenController {
     private KundenService kundenService;
 
     @PostMapping("/createKunde")
-    public String createKunde(Kunde kunde) {
+    public String createKunde(@RequestBody Kunde kunde) {
         return kundenService.createKunde(kunde);
     }
 
@@ -27,13 +27,11 @@ public class KundenController {
         return kundenService.delete(id);
     }
 
-
     @DeleteMapping("/deleteKundeByAusweisNr/{ausweisnr}")
     @ResponseBody
     public String deleteByAusweisNr(@PathVariable String ausweisnr) {
         return kundenService.deleteByAusweisNr(ausweisnr);
     }
-
 
     @GetMapping("/getKundebyNameAndEmail")
     @ResponseBody
@@ -53,14 +51,13 @@ public class KundenController {
         return kundenService.getKundeByEmail(email);
     }
 
-
     /**
      * GET /update  --> Update the email and the name for the Person in the
      * database having the passed id.
      */
     @PutMapping("/updateKunde")
     @ResponseBody
-    public String updateKunde(Kunde kunde) {
+    public String updateKunde(@RequestBody Kunde kunde) {
         return kundenService.updateKunde(kunde);
     }
 
@@ -73,13 +70,11 @@ public class KundenController {
         return kundenService.getAllKunden();
     }
 
-
     @GetMapping("/{id}")
     @ResponseBody
     public Kunde getKundeById(@PathVariable("id") String id) {
         Kunde kunde = kundenService.getKundeByID(id);
         return kunde;
     }
-
 
 }

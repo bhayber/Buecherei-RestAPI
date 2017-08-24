@@ -1,5 +1,8 @@
 package de.adesso.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -25,6 +28,10 @@ public class Person extends EntityBase implements Serializable {
     private String telmobile;
 
     @Column(name = "gebDatum", nullable = true)
+    // Formats output date when this DTO is passed through JSON
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    // Allows dd/MM/yyyy date to be passed into GET request in JSON
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date gebDatum;
 
     @Column(name = "adresse")
