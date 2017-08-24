@@ -29,7 +29,7 @@ import static org.junit.Assert.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 
-//Die Tests laufen in der eingebeteten Derby Datenbank
+//Die Integrationstests laufen in der eingebeteten Derby Datenbank
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
 @WebAppConfiguration
