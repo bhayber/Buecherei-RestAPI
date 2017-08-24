@@ -1,40 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26503b03-83fa-4d27-82fc-c99c612c875c" name="Default" comment="Alles hochladen">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/hayber.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestappData/src/main/resources/application-dev.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/TestDatabaseConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/target/classes/de/adesso/Repository/KundenRepository.class" afterPath="$PROJECT_DIR$/TestappData/target/classes/de/adesso/Repository/KundenRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/target/classes/de/adesso/model/Person.class" afterPath="$PROJECT_DIR$/TestappData/target/classes/de/adesso/model/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/db.lck" afterPath="$PROJECT_DIR$/testDatabase/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/log/log.ctrl" afterPath="$PROJECT_DIR$/testDatabase/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/log/log1.dat" afterPath="$PROJECT_DIR$/testDatabase/log/log1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/testDatabase/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c490.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c490.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c4b0.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c4b0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c4d0.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c4d0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c4f0.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c4f0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c501.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c501.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c510.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c510.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c521.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c521.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c530.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c530.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c561.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c561.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c571.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c571.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c581.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c581.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c60.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c60.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c81.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c81.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c90.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c90.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/ca1.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/ca1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/cb1.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/cb1.dat" />
+    <list default="true" id="26503b03-83fa-4d27-82fc-c99c612c875c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/TestAppApi.iml" afterPath="$PROJECT_DIR$/TestAppApi/TestAppApi.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/pom.xml" afterPath="$PROJECT_DIR$/TestAppApi/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/src/test/java/de/adesso/Controller/KundenControllerTest.java" afterPath="$PROJECT_DIR$/TestAppApi/src/test/java/de/adesso/Controller/KundenControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/TestappData.iml" afterPath="$PROJECT_DIR$/TestappData/TestappData.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/pom.xml" afterPath="$PROJECT_DIR$/TestappData/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/KundenRepository.java" afterPath="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/KundenRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppBusiness/src/test/java/de/adesso/Service/PersonServiceTest.java" afterPath="$PROJECT_DIR$/TestAppBusiness/src/test/java/de/adesso/Service/PersonServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java" afterPath="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/TestDatabaseConfig.java" afterPath="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/TestDatabaseConfig.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,38 +41,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="BibliothikarRepositoryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/BibliothikarRepositoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestDatabaseConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/TestDatabaseConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KundenRepositoryTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,8 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class" />
-        <option value="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.8/jackson-databind-2.8.8.jar!/com/fasterxml/jackson/databind/ObjectMapper.class" />
         <option value="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/model/Book.java" />
         <option value="$PROJECT_DIR$/TestAppBusiness/src/main/java/de/adesso/Service/VerlagService.java" />
         <option value="$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/bind/annotation/ResponseBody.class" />
@@ -204,6 +142,8 @@
         <option value="$PROJECT_DIR$/TestAppApi/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/TestappData/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/TestDatabaseConfig.java" />
+        <option value="$PROJECT_DIR$/TestAppBusiness/src/test/java/de/adesso/Service/PersonServiceTest.java" />
       </list>
     </option>
   </component>
@@ -270,6 +210,48 @@
             <path>
               <item name="TestApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestApp" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAppBusiness" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestApp" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAppBusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestApp" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAppBusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestApp" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAppBusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestApp" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAppBusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestApp" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAppBusiness" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -938,7 +920,7 @@
       <workItem from="1503408466345" duration="12783000" />
       <workItem from="1503476267163" duration="5820000" />
       <workItem from="1503482903436" duration="12450000" />
-      <workItem from="1503563262189" duration="16803000" />
+      <workItem from="1503563262189" duration="17566000" />
     </task>
     <task id="LOCAL-00001" summary="Alles hochladen">
       <created>1502456502291</created>
@@ -1031,7 +1013,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503563652342</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Alles hochladen">
+      <created>1503590188893</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1503590188893</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1067,11 +1056,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108870000" />
+    <option name="totallyTimeSpent" value="109633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1087,7 +1075,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3911007" sideWeight="0.707304" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2228145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2585288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21160042" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.195629" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1166,20 +1154,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TestappData/src/main/java/de/adesso/model/Book_Verlag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestappData/src/main/java/de/adesso/model/Bereich.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestApp.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1476,30 +1450,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestappData/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="80" lean-forward="false" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.4.RELEASE/spring-boot-1.5.4.RELEASE-sources.jar!/org/springframework/boot/SpringBootConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="29" column="74" lean-forward="false" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.9.RELEASE/spring-orm-4.3.9.RELEASE-sources.jar!/org/springframework/orm/jpa/JpaTransactionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="129" column="11" lean-forward="false" selection-start-line="129" selection-start-column="11" selection-end-line="129" selection-end-column="11" />
-          <folding>
-            <element signature="e#6659#6660#0" expanded="true" />
-            <element signature="e#6699#6700#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1516,8 +1471,8 @@
         <state relative-caret-position="192">
           <caret line="720" column="23" lean-forward="false" selection-start-line="720" selection-start-column="23" selection-end-line="720" selection-end-column="23" />
           <folding>
-            <element signature="e#27585#27586#0" expanded="true" />
-            <element signature="e#27628#27629#0" expanded="true" />
+            <element signature="e#27585#27586#0" expanded="false" />
+            <element signature="e#27628#27629#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1533,22 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/BibliothikarRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/TestDatabaseConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1571,8 +1510,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="471">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/BibliothikarRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.9.RELEASE/spring-tx-4.3.9.RELEASE-sources.jar!/org/springframework/transaction/PlatformTransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.9.RELEASE/spring-orm-4.3.9.RELEASE-sources.jar!/org/springframework/orm/jpa/JpaTransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="110" column="13" lean-forward="false" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/TestDatabaseConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestappData/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestAppBusiness/src/test/java/de/adesso/Service/PersonServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding />
         </state>
       </provider>

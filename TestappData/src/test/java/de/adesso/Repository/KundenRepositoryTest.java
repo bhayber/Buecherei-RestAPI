@@ -17,10 +17,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootConfiguration
 public class KundenRepositoryTest {
 
+    //Konstanten
     private static final String name = "Bernadot Schuhmacher";
     private static final String email = "HanseRockstar@Hannover.de";
     private static final String ausweisnr = "XX-XX-BB";
     private static final String adresse = "Bernadotstrasse 12; 60486 Frankfurt am Main";
+
     private static String id;
 
     @Autowired

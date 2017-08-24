@@ -1,10 +1,15 @@
 package de.adesso.Service;
 
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@SpringBootTest()
 public class PersonServiceTest {
+
+    @Autowired
+    PersonService personService;
+
     @Test
     public void createPerson() throws Exception {
 
