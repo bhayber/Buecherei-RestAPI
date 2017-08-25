@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: de.adesso.Controller.PersonControllerTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.006 sec - in de.adesso.Controller.PersonControllerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 sec - in de.adesso.Controller.PersonControllerTest

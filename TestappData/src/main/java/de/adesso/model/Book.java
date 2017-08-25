@@ -1,5 +1,7 @@
 package de.adesso.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -24,8 +26,9 @@ public class Book extends EntityBase {
     private Date abgabefristDatum;
 
     @ManyToOne
-    @JoinColumn(name = "FK_User")
-    private Person person;
+    @JoinColumn(name = "FK_Kunde")
+    @JsonBackReference // Damit es nicht zu einer Rückkoplung führt und eine unendliche JSON Datei ausgegeben wird
+    private Kunde kunde;
 
     @OneToMany(mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Book_Verlag> bookVerlag;
@@ -47,12 +50,12 @@ public class Book extends EntityBase {
     }
 
 
-    public Person getPerson() {
-        return person;
+    public Kunde getKunde() {
+        return kunde;
     }
 
-    public void setPerson(Person person) {
-        this.person = person;
+    public void setKunde(Kunde kunde) {
+        this.kunde = kunde;
     }
 
 

@@ -6,7 +6,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.Set;
 
 import static javax.persistence.EnumType.ORDINAL;
 
@@ -14,9 +13,6 @@ import static javax.persistence.EnumType.ORDINAL;
 @Table(name = "demo_person")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Person extends EntityBase implements Serializable {
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "person")
-    private Set<Book> books;
 
     @Column(name = "name", nullable = false)
     private String name;
@@ -82,13 +78,7 @@ public class Person extends EntityBase implements Serializable {
         this.adresse = adresse;
     }
 
-    public Set<Book> getBooks() {
-        return books;
-    }
 
-    public void setBooks(Set<Book> books) {
-        this.books = books;
-    }
 
     public Geschlecht getGeschlecht() {
         return geschlecht;

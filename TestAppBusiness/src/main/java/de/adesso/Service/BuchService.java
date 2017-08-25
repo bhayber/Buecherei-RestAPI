@@ -8,6 +8,7 @@ import de.adesso.model.Verlag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -74,12 +75,12 @@ public class BuchService {
     }
 
 
-    public Set<Book> getAllBooksNotRentedByCustomer() {
-        Set<Book> filtBookList = (Set<Book>) bookRepository.findAll();
+    public ArrayList<Book> getAllBooksNotRentedByCustomer() {
+        ArrayList<Book> filtBookList = (ArrayList<Book>) bookRepository.findAll();
 
         for (Book curBook : filtBookList
                 )
-            if (curBook.getPerson() != null) {
+            if (curBook.getKunde() != null) {
                 filtBookList.remove(curBook);
             }
         return filtBookList;
@@ -110,4 +111,15 @@ public class BuchService {
     }
 
 
+    public String createBuch(Book book) {
+        Book newBook = new Book();
+        try {
+            newBook.setTitel(book.getTitel());
+            newBook.setIsbnr(book.getIsbnr());
+            bookRepository.save(newBook);
+        } catch (Exception ex) {
+            return "Error creating the Book: " + ex.toString() + newBook.getId();
+        }
+        return "Book succesfully created with id = " + newBook.getId();
+    }
 }

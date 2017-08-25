@@ -74,12 +74,14 @@ public class KundenService {
 
     public String updateKunde(Kunde kunde) {
         try {
+            PasswordMaker passwordMaker = new PasswordMaker();
             Kunde foundKunde = kundenRepository.findById(kunde.getId());
             foundKunde.setEmail(kunde.getEmail() == null ? foundKunde.getEmail() : kunde.getEmail());
             foundKunde.setName(kunde.getName() == null ? foundKunde.getName() : kunde.getName());
             foundKunde.setAdresse(kunde.getAdresse() == null ? foundKunde.getAdresse() : kunde.getAdresse());
             foundKunde.setTelmobile(kunde.getTelmobile() == null ? foundKunde.getTelmobile() : kunde.getTelmobile());
             foundKunde.setAustritt(kunde.getAustritt());
+            foundKunde.setPassword(kunde.getPassword() == null ? foundKunde.getPassword() : passwordMaker.hashPassword(kunde.getPassword()));
             kundenRepository.save(foundKunde);
         } catch (Exception ex) {
             return "Error updating the Kunde: " + ex.toString();

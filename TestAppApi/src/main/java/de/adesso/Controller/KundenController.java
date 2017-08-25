@@ -14,7 +14,7 @@ public class KundenController {
     private KundenService kundenService;
 
     @PostMapping("/createKunde")
-    public String createKunde(@RequestBody Kunde kunde) {
+    public String createKunde(Kunde kunde) {
         return kundenService.createKunde(kunde);
     }
 
