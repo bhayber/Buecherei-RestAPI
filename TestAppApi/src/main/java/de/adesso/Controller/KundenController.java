@@ -62,7 +62,7 @@ public class KundenController {
     }
 
     /**
-     * GET /all  --> Gets all Person Information
+     * GET /all  --> Gets all Kunden Information
      */
     @GetMapping("/getall")
     @ResponseBody

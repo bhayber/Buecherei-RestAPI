@@ -57,6 +57,7 @@ public class KundenControllerTest {
         newKunde.setAdresse("Siemensstrasse 12 60489 Frankfurt");
         newKunde.setTelmobile("069 29 29 11");
         newKunde.setGeschlecht(Geschlecht.WEIBLICH);
+        newKunde.setPassword("Test");
         String sol = mvc.perform(MockMvcRequestBuilders.request(HttpMethod.POST
                 , "http://localhost:9000/kunde/createKunde").param("name", newKunde.getName()).param("adresse", newKunde.getAdresse())
                 .param("email", newKunde.getEmail())
@@ -107,6 +108,5 @@ public class KundenControllerTest {
         assertThat(kunde.getEmail(), new Contains("Dörte@email.de"));
 
     }
-
 
 }
