@@ -1,5 +1,8 @@
 package de.adesso.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
@@ -16,9 +19,15 @@ public class Kunde extends Person {
     private String ausweisnr;
 
     @Column(name = "mitgliedSeit")
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    // Allows dd/MM/yyyy date to be passed into GET request in JSON
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date mitgliedSeit;
 
     @Column(name = "austritt")
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    // Allows dd/MM/yyyy date to be passed into GET request in JSON
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date austritt;
 
     public String getAusweisnr() {

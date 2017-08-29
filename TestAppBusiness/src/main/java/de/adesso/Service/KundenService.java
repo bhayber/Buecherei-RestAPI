@@ -80,8 +80,9 @@ public class KundenService {
             foundKunde.setName(kunde.getName() == null ? foundKunde.getName() : kunde.getName());
             foundKunde.setAdresse(kunde.getAdresse() == null ? foundKunde.getAdresse() : kunde.getAdresse());
             foundKunde.setTelmobile(kunde.getTelmobile() == null ? foundKunde.getTelmobile() : kunde.getTelmobile());
+            foundKunde.setGeschlecht(kunde.getGeschlecht() == null ? foundKunde.getGeschlecht() : kunde.getGeschlecht());
             foundKunde.setAustritt(kunde.getAustritt());
-            foundKunde.setPassword(kunde.getPassword() == null ? foundKunde.getPassword() : passwordMaker.hashPassword(kunde.getPassword()));
+            foundKunde.setPassword(kunde.getPassword().isEmpty() ? foundKunde.getPassword() : passwordMaker.hashPassword(kunde.getPassword()));
             kundenRepository.save(foundKunde);
         } catch (Exception ex) {
             return "Error updating the Kunde: " + ex.toString();
