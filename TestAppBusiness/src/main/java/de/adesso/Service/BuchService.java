@@ -76,9 +76,10 @@ public class BuchService {
 
 
     public ArrayList<Book> getAllBooksNotRentedByCustomer() {
+        ArrayList<Book> orginalBookList = (ArrayList<Book>) bookRepository.findAll();
         ArrayList<Book> filtBookList = (ArrayList<Book>) bookRepository.findAll();
 
-        for (Book curBook : filtBookList
+        for (Book curBook : orginalBookList
                 )
             if (curBook.getKunde() != null) {
                 filtBookList.remove(curBook);

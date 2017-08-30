@@ -1,6 +1,8 @@
 package de.adesso.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -17,12 +19,18 @@ public class Book extends EntityBase {
     private String isbnr;
 
     @Column(name = "abgabeDatum")
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date abgabeDatum;
 
     @Column(name = "ausleihDatum")
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date ausleihDatum;
 
     @Column(name = "abgabefristDatum")
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date abgabefristDatum;
 
     @ManyToOne
@@ -32,6 +40,17 @@ public class Book extends EntityBase {
 
     @OneToMany(mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Book_Verlag> bookVerlag;
+    @OneToOne
+    @JoinColumn(name = "fk_genreID")
+    private StammBookGenre genre;
+
+    public StammBookGenre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(StammBookGenre genre) {
+        this.genre = genre;
+    }
 
     public Date getAbgabefristDatum() {
         return abgabefristDatum;
