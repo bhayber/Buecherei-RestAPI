@@ -2,6 +2,7 @@ package de.adesso.Controller;
 
 import de.adesso.Service.BuchService;
 import de.adesso.model.Book;
+import de.adesso.model.Kunde;
 import de.adesso.model.Verlag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,8 +16,14 @@ public class BuchController {
 
     @PostMapping("/createBuchAndVerlag")
     @ResponseBody
-    public String createBuchAndVerlag(Book buch, Verlag verlag) {
+    public String createBuchAndVerlag(@RequestBody Book buch, @RequestBody Verlag verlag) {
         return buchService.createBuchWithVerlag(buch, verlag);
+    }
+
+    @PutMapping("/userRentTheBook")
+    @ResponseBody
+    public String userRentTheBook(@RequestBody Book book, @RequestBody Kunde kunde) {
+        return buchService.customerRentTheBook(book, kunde);
     }
 
     @PostMapping("/createBuch")
@@ -27,7 +34,7 @@ public class BuchController {
 
     @PostMapping("/createBuchAndAssignVerlag")
     @ResponseBody
-    public String createBuchAndAssignVerlag(Book buch, Verlag verlag) {
+    public String createBuchAndAssignVerlag(@RequestBody Book buch, @RequestBody Verlag verlag) {
         return buchService.createBuch(buch, verlag);
     }
 
@@ -45,7 +52,7 @@ public class BuchController {
 
     @PostMapping("/addVerlagToBook")
     @ResponseBody
-    public String addVerlagToBook(Book book, Verlag verlag) {
+    public String addVerlagToBook(@RequestBody Book book, @RequestBody Verlag verlag) {
         return buchService.addVerlagToBook(book, verlag);
     }
 

@@ -4,15 +4,18 @@ import de.adesso.Repository.BookRepository;
 import de.adesso.Repository.VerlagRepository;
 import de.adesso.model.Book;
 import de.adesso.model.Book_Verlag;
+import de.adesso.model.Kunde;
 import de.adesso.model.Verlag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
 @Component
+@Service
 public class BuchService {
 
     @Autowired
@@ -68,6 +71,17 @@ public class BuchService {
             return ex.toString();
         }
         return "Buch erfolgreich zugeordnet ! ";
+    }
+
+    public String customerRentTheBook(Book book, Kunde kunde) {
+        try {
+            Book foundBook = bookRepository.findById(book.getId());
+            foundBook.setKunde(kunde);
+            bookRepository.save(foundBook);
+        } catch (Exception ex) {
+            return ex.toString();
+        }
+        return "Erfolg";
     }
 
     public Iterable<Book> getAllBooks() {
