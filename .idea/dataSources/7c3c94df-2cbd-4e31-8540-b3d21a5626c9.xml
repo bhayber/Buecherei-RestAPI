@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="testDatabase">
+  <database-model serializer="dbm" rdbms="DERBY" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="APP"/>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="SQLJ"/>
+    <schema id="5" parent="1" name="SYS"/>
+    <schema id="6" parent="1" name="SYSCAT"/>
+    <schema id="7" parent="1" name="SYSCS_DIAG"/>
+    <schema id="8" parent="1" name="SYSCS_UTIL"/>
+    <schema id="9" parent="1" name="SYSFUN"/>
+    <schema id="10" parent="1" name="SYSIBM"/>
+    <schema id="11" parent="1" name="SYSPROC"/>
+    <schema id="12" parent="1" name="SYSSTAT"/>
+    <schema id="13" parent="1" name="TEST">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="14" parent="13" name="DEMO_BIBLIOTHIKAR"/>
+    <table id="15" parent="13" name="DEMO_BOOK"/>
+    <table id="16" parent="13" name="DEMO_BOOK_VERLAG"/>
+    <table id="17" parent="13" name="DEMO_KUNDE"/>
+    <table id="18" parent="13" name="DEMO_PERSON"/>
+    <table id="19" parent="13" name="DEMO_VERLAG"/>
+    <column id="20" parent="14" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="14" name="ADRESSE">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="22" parent="14" name="EMAIL">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="14" name="GEB_DATUM">
+      <Position>4</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+    </column>
+    <column id="24" parent="14" name="GESCHLECHT">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <column id="25" parent="14" name="NAME">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="14" name="PASSWORD">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="27" parent="14" name="TELMOBILE">
+      <Position>8</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="28" parent="14" name="BEREICH">
+      <Position>9</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <column id="29" parent="14" name="OBJEKT_ADRESSE">
+      <Position>10</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <index id="30" parent="14" name="SQL170926120345800">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EMAIL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="31" parent="14" name="SQL170926120345350">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="32" parent="15" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="15" name="ABGABE_DATUM">
+      <Position>2</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+    </column>
+    <column id="34" parent="15" name="ABGABEFRIST_DATUM">
+      <Position>3</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+    </column>
+    <column id="35" parent="15" name="AUSLEIH_DATUM">
+      <Position>4</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+    </column>
+    <column id="36" parent="15" name="ISBNR">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="15" name="TITEL">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="15" name="FK_KUNDE">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="39" parent="15" name="SQL170926120345440">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="40" parent="15" name="FKR1LP5DY5P5FCVX44J18KI53JQ">
+      <ColNames>FK_KUNDE</ColNames>
+      <RefSchemaName>TEST</RefSchemaName>
+      <RefTableName>DEMO_KUNDE</RefTableName>
+      <RefKeyName>SQL170926120345570</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="41" parent="16" name="VER_DATUM">
+      <Position>1</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+    </column>
+    <column id="42" parent="16" name="FK_VERLAG">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="16" name="FK_BOOK">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="44" parent="16" name="SQL170926120345510">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>FK_VERLAG
+FK_BOOK</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="45" parent="16" name="FK308EDUF425FDHPVL4QROAOUR5">
+      <ColNames>FK_VERLAG</ColNames>
+      <RefSchemaName>TEST</RefSchemaName>
+      <RefTableName>DEMO_VERLAG</RefTableName>
+      <RefKeyName>SQL170926120345700</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="46" parent="16" name="FKDGLA7MWU2N92A378YY58FV44D">
+      <ColNames>FK_BOOK</ColNames>
+      <RefSchemaName>TEST</RefSchemaName>
+      <RefTableName>DEMO_BOOK</RefTableName>
+      <RefKeyName>SQL170926120345440</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <column id="47" parent="17" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="17" name="ADRESSE">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="49" parent="17" name="EMAIL">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="17" name="GEB_DATUM">
+      <Position>4</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+    </column>
+    <column id="51" parent="17" name="GESCHLECHT">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <column id="52" parent="17" name="NAME">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="17" name="PASSWORD">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="54" parent="17" name="TELMOBILE">
+      <Position>8</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="55" parent="17" name="AUSTRITT">
+      <Position>9</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+    </column>
+    <column id="56" parent="17" name="AUSWEISNR">
+      <Position>10</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="57" parent="17" name="MITGLIED_SEIT">
+      <Position>11</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+    </column>
+    <index id="58" parent="17" name="SQL170926120345910">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EMAIL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="59" parent="17" name="SQL170926120345930">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>AUSWEISNR</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="17" name="SQL170926120345570">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="61" parent="18" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="18" name="ADRESSE">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="63" parent="18" name="EMAIL">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="64" parent="18" name="GEB_DATUM">
+      <Position>4</Position>
+      <DataType>TIMESTAMP(29,9)|93</DataType>
+    </column>
+    <column id="65" parent="18" name="GESCHLECHT">
+      <Position>5</Position>
+      <DataType>INTEGER(10)|4</DataType>
+    </column>
+    <column id="66" parent="18" name="NAME">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="18" name="PASSWORD">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="68" parent="18" name="TELMOBILE">
+      <Position>8</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <index id="69" parent="18" name="SQL170926120346010">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EMAIL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="18" name="SQL170926120345640">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="71" parent="19" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="19" name="ADRESSE">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="73" parent="19" name="JAHRL_UMSATZ">
+      <Position>3</Position>
+      <DataType>DOUBLE(52)|8</DataType>
+    </column>
+    <column id="74" parent="19" name="NAME">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="75" parent="19" name="SQL170926120345700">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
