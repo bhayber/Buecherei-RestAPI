@@ -90,15 +90,7 @@ public class BuchService {
 
 
     public ArrayList<Book> getAllBooksNotRentedByCustomer() {
-        ArrayList<Book> orginalBookList = (ArrayList<Book>) bookRepository.findAll();
-        ArrayList<Book> filtBookList = (ArrayList<Book>) bookRepository.findAll();
-
-        for (Book curBook : orginalBookList
-                )
-            if (curBook.getKunde() != null) {
-                filtBookList.remove(curBook);
-            }
-        return filtBookList;
+        return (ArrayList<Book>) bookRepository.findAllBooksNotRented();
     }
 
     public Book getBookByID(String bookID) {

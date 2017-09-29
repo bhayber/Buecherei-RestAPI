@@ -15,4 +15,6 @@ public interface BibliothikarRepository extends JpaRepository<Bibliothikar, Inte
 
     Set<Bibliothikar> findByBereich(Bereich bereich);
 
+    Set<Bibliothikar> findByobjektAdresse(Bereich bereich);
+
 }
