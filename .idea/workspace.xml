@@ -2,48 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26503b03-83fa-4d27-82fc-c99c612c875c" name="Default" comment="Alles hochladen">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testDatabase/tmp/T1506585739211.tmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testDatabase/tmp/T1506585739212.tmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testDatabase/tmp/T1506585739213.tmp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppBusiness/target/classes/de/adesso/Service/BuchService.class" afterPath="$PROJECT_DIR$/TestAppBusiness/target/classes/de/adesso/Service/BuchService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/target/classes/de/adesso/Repository/BibliothikarRepository.class" afterPath="$PROJECT_DIR$/TestappData/target/classes/de/adesso/Repository/BibliothikarRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/db.lck" afterPath="$PROJECT_DIR$/testDatabase/db.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/log/log.ctrl" afterPath="$PROJECT_DIR$/testDatabase/log/log.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/log/log2.dat" afterPath="$PROJECT_DIR$/testDatabase/log/log2.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/testDatabase/log/logmirror.ctrl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c4b0.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c4b0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c4c1.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c4c1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c4f0.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c4f0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c501.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c501.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c510.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c510.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c521.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c521.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c561.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c561.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c571.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c571.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c581.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c581.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c591.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c591.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c5c0.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c5c0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c5d1.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c5d1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c5e1.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c5e1.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c5f0.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c5f0.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDatabase/seg0/c601.dat" afterPath="$PROJECT_DIR$/testDatabase/seg0/c601.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/7c3c94df-2cbd-4e31-8540-b3d21a5626c9.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/7c3c94df-2cbd-4e31-8540-b3d21a5626c9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/derby.log" afterPath="$PROJECT_DIR$/TestAppApi/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/pom.xml" afterPath="$PROJECT_DIR$/TestAppApi/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/src/main/resources/application-ci.properties" afterPath="$PROJECT_DIR$/TestAppApi/src/main/resources/application-ci.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/src/main/resources/application-dev.properties" afterPath="$PROJECT_DIR$/TestAppApi/src/main/resources/application-dev.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/TestAppApi/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/target/classes/de/adesso/Repository/BookRepository.class" afterPath="$PROJECT_DIR$/TestappData/target/classes/de/adesso/Repository/BookRepository.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/target/classes/application.properties" afterPath="$PROJECT_DIR$/TestAppApi/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/TestAppApi/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/TestAppApi/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppBusiness/src/main/java/de/adesso/Service/BuchService.java" afterPath="$PROJECT_DIR$/TestAppBusiness/src/main/java/de/adesso/Service/BuchService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppBusiness/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/TestAppBusiness/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppBusiness/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/TestAppBusiness/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/derby.log" afterPath="$PROJECT_DIR$/TestappData/derby.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BibliothikarRepository.java" afterPath="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BibliothikarRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BookRepository.java" afterPath="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BookRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/TestappData/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/TestappData/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -985,7 +949,7 @@
       <workItem from="1506585316921" duration="806000" />
       <workItem from="1506587139068" duration="31000" />
       <workItem from="1506587971335" duration="9990000" />
-      <workItem from="1506666614459" duration="10208000" />
+      <workItem from="1506666614459" duration="10346000" />
     </task>
     <task id="LOCAL-00001" summary="Alles hochladen">
       <created>1502456502291</created>
@@ -1148,7 +1112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506586112707</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Alles hochladen">
+      <created>1506692937172</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1506692937172</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1184,7 +1155,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194818000" />
+    <option name="totallyTimeSpent" value="194956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
