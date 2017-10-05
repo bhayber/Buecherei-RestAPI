@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = TestDatabaseConfig.class)
+@SpringBootTest(classes = {TestDatabaseConfig.class, DevDatabaseConfig.class})
 @SpringBootConfiguration
 public class KundenRepositoryTest {
 
@@ -25,7 +25,7 @@ public class KundenRepositoryTest {
 
     private static String id;
 
-    @Autowired
+    @Autowired(required = false)
     private KundenRepository kundenRepository;
 
     @Before

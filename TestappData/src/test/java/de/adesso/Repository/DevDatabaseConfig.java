@@ -18,17 +18,16 @@ import javax.sql.DataSource;
 @TestConfiguration
 @EnableJpaRepositories
 @EnableTransactionManagement
-@Profile("ci")
-public class TestDatabaseConfig {
+@Profile("dev")
+public class DevDatabaseConfig {
 
     @Bean
     public DataSource dataSource() {
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
-        dataSource.setUrl("jdbc:derby:C:/dev/sourcen/TestApp/testDatabase;create=true");
-        dataSource.setUsername("test");
-        dataSource.setPassword("test");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/testdb");
+        dataSource.setUsername("root");
+        dataSource.setPassword("root");
         return dataSource;
     }
 
@@ -49,8 +48,8 @@ public class TestDatabaseConfig {
         HibernateJpaVendorAdapter hibernateJpaVendorAdapter = new HibernateJpaVendorAdapter();
         hibernateJpaVendorAdapter.setShowSql(true);
         hibernateJpaVendorAdapter.setGenerateDdl(true);
-        hibernateJpaVendorAdapter.setDatabase(Database.DERBY);
-        hibernateJpaVendorAdapter.setDatabasePlatform("org.hibernate.dialect.DerbyTenSevenDialect");
+        hibernateJpaVendorAdapter.setDatabase(Database.MYSQL);
+        hibernateJpaVendorAdapter.setDatabasePlatform("org.hibernate.dialect.MySQL5Dialect");
         return hibernateJpaVendorAdapter;
     }
 

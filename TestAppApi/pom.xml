@@ -39,35 +39,20 @@
         </plugins>
     </build>
 
+    <properties>
+
+    </properties>
+
     <profiles>
         <profile>
-            <id>test</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-antrun-plugin</artifactId>
-                        <version>1.8</version>
-                        <executions>
-                            <execution>
-                                <phase>test</phase>
-                                <goals>
-                                    <goal>run</goal>
-                                </goals>
-                                <configuration>
-                                    <target>
-                                        <echo>Using application-dev.properties</echo>
-                                        <echo>"${project.build.outputDirectory}"</echo>
-                                        <delete file="${project.build.outputDirectory}/application.properties"></delete>
-                                        <copy file="src\main\resources\application-dev.properties"
-                                              tofile="${project.build.outputDirectory}/application.properties"/>
-                                    </target>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
+            <id>ci</id>
+        </profile>
+        <profile>
+            <id>dev</id>
+        </profile>
+        <profile>
+            <id>prod</id>
         </profile>
     </profiles>
+
 </project>
