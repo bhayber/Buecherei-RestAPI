@@ -26,7 +26,7 @@ public class TestDatabaseConfig {
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
-        dataSource.setUrl("jdbc:derby:C:/dev/sourcen/TestApp/testDatabase;create=true");
+        dataSource.setUrl("jdbc:derby:testDatabase;create=true");
         dataSource.setUsername("test");
         dataSource.setPassword("test");
         return dataSource;
