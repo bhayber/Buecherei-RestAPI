@@ -12,7 +12,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/testDatabase/log/logmirror.ctrl" afterPath="$PROJECT_DIR$/TestappData/testDatabase/log/logmirror.ctrl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/testDatabase/seg0/c4f0.dat" afterPath="$PROJECT_DIR$/TestappData/testDatabase/seg0/c4f0.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/derby.log" afterPath="$PROJECT_DIR$/TestAppApi/derby.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/TestAppApi/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestAppApi/target/classes/application.properties" afterPath="$PROJECT_DIR$/TestAppApi/target/classes/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/derby.log" afterPath="$PROJECT_DIR$/TestappData/derby.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BookRepository.java" afterPath="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BookRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/derby.log" afterPath="$PROJECT_DIR$/derby.log" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,7 +45,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -122,7 +127,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/model/Bibliothikar.java" />
         <option value="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BibliothikarRepository.java" />
-        <option value="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BookRepository.java" />
         <option value="$PROJECT_DIR$/TestAppBusiness/src/main/java/de/adesso/Service/BuchService.java" />
         <option value="$PROJECT_DIR$/TestAppApi/target/classes/application-dev.properties" />
         <option value="$PROJECT_DIR$/TestAppApi/src/test/java/de/adesso/Controller/HelloControllerTest.java" />
@@ -131,7 +135,6 @@
         <option value="$USER_HOME$/.m2/settings.xml" />
         <option value="$PROJECT_DIR$/TestAppApi/pom.xml" />
         <option value="$PROJECT_DIR$/TestAppApi/target/classes/application.properties" />
-        <option value="$PROJECT_DIR$/TestAppApi/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/TestappData/src/main/resources/connection.YML" />
         <option value="$PROJECT_DIR$/TestappData/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/MyProps.java" />
@@ -139,13 +142,15 @@
         <option value="$PROJECT_DIR$/TestappData/src/test/resources/application.yml" />
         <option value="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/FooProps.java" />
         <option value="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/DevDatabaseConfig.java" />
-        <option value="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java" />
         <option value="$PROJECT_DIR$/TestappData/src/test/resources/application.properties" />
         <option value="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/TestDatabaseConfig.java" />
         <option value="$PROJECT_DIR$/TestAppApi/src/main/resources/application-ci.properties" />
         <option value="$PROJECT_DIR$/TestAppApi/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/TestAppApi/src/main/java/de/adesso/Controller/BuchController.java" />
         <option value="$PROJECT_DIR$/TestappData/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/TestAppApi/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BookRepository.java" />
       </list>
     </option>
   </component>
@@ -204,8 +209,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Local Unit Tests">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
+              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
+              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
+              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
+              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
+              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
+              <item name="de/adesso/Controller" type="cbb8eebc:String" user="de/adesso/Controller" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,6 +299,30 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeuerVersuch" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAppApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeuerVersuch" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAppApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NeuerVersuch" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAppApi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
@@ -353,40 +411,59 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot:1.5.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot:1.5.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-1.5.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot:1.5.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-1.5.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="boot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.data:spring-data-jpa:1.11.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.data:spring-data-jpa:1.11.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-data-jpa-1.11.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.data:spring-data-jpa:1.11.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-data-jpa-1.11.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NeuerVersuch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.data:spring-data-jpa:1.11.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-data-jpa-1.11.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Local Unit Tests">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
-              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
-              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
-              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
-              <item name="TestAppApi" type="cbb8eebc:String" user="TestAppApi" />
-              <item name="src/test/java" type="cbb8eebc:String" user="src/test/java" />
-              <item name="de/adesso/Controller" type="cbb8eebc:String" user="de/adesso/Controller" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1066,7 +1143,9 @@
       <workItem from="1506587971335" duration="9990000" />
       <workItem from="1506666614459" duration="11546000" />
       <workItem from="1507272435538" duration="4944000" />
-      <workItem from="1507285935833" duration="2655000" />
+      <workItem from="1507285935833" duration="2911000" />
+      <workItem from="1507616994267" duration="3955000" />
+      <workItem from="1507631727194" duration="1425000" />
     </task>
     <task id="LOCAL-00001" summary="Alles hochladen">
       <created>1502456502291</created>
@@ -1264,7 +1343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507285614156</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Alles hochladen">
+      <created>1507296252494</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1507296252494</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1300,7 +1386,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225866000" />
+    <option name="totallyTimeSpent" value="231502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1315,10 +1401,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2763466" sideWeight="0.86466163" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16744731" sideWeight="0.78356606" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38056207" sideWeight="0.707304" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38056207" sideWeight="0.707304" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22610097" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24812031" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21160042" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24597207" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1406,32 +1492,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TestappData/src/main/java/de/adesso/model/Book_Verlag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/KundenRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="21" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestAppBusiness/src/main/java/de/adesso/Service/KundenService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BookRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1514,24 +1579,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestAppApi/src/test/java/de/adesso/Controller/KundenControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.m2/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestAppApi/src/test/java/de/adesso/Controller/HelloControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1560,13 +1611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/BibliothikarRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/FooProps.java" />
     <entry file="file://$PROJECT_DIR$/TestappData/src/test/resources/application.yml" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test/1.5.4.RELEASE/spring-boot-test-1.5.4.RELEASE-sources.jar!/org/springframework/boot/test/context/SpringBootTest.java">
@@ -1588,38 +1632,9 @@
     <entry file="file://$PROJECT_DIR$/TestappData/src/test/resources/application-prod.properties" />
     <entry file="file://$PROJECT_DIR$/TestappData/src/test/resources/application-dev.properties" />
     <entry file="file://$PROJECT_DIR$/TestappData/src/test/resources/application-ci.properties" />
-    <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestappData/src/test/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/TestappData/src/main/resources/application-prod.properties" />
     <entry file="file://$PROJECT_DIR$/TestappData/src/main/resources/application-ci.properties" />
-    <entry file="file://$PROJECT_DIR$/TestAppApi/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="75" lean-forward="false" selection-start-line="29" selection-start-column="75" selection-end-line="29" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestAppApi/src/main/resources/application-prod.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestAppApi/src/main/resources/application-ci.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-web/1.5.4.RELEASE/spring-boot-starter-web-1.5.4.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1671,8 +1686,47 @@
         <state relative-caret-position="0">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestAppApi/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="75" lean-forward="false" selection-start-line="29" selection-start-column="75" selection-end-line="29" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestAppApi/src/test/java/de/adesso/Controller/HelloControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/BibliothikarRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.4.RELEASE/spring-boot-1.5.4.RELEASE-sources.jar!/org/springframework/boot/SpringBootConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/KundenRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1684,26 +1738,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestappData/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/TestAppApi/src/main/resources/application-prod.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestAppApi/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+        <state relative-caret-position="144">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestappData/src/test/java/de/adesso/Repository/TestDatabaseConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestappData/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestAppApi/src/main/resources/application-ci.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestAppApi/src/test/java/de/adesso/Controller/KundenControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.4.RELEASE/spring-data-jpa-1.11.4.RELEASE-sources.jar!/org/springframework/data/jpa/repository/JpaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestappData/src/main/java/de/adesso/Repository/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestAppApi/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
