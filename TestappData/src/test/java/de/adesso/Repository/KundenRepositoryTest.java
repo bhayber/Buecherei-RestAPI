@@ -2,6 +2,7 @@ package de.adesso.Repository;
 
 import de.adesso.model.Geschlecht;
 import de.adesso.model.Kunde;
+import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -38,7 +39,7 @@ public class KundenRepositoryTest {
         kunde.setAdresse(adresse);
         kundenRepository.save(kunde);
         id = kunde.getId();
-        Assert.assertNotNull(kunde.getId());
+        Assertions.assertThat(id).isNotNull(); // AssertJ Benutzt
     }
 
     @After
