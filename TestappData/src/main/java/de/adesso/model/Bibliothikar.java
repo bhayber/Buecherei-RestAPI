@@ -1,33 +1,38 @@
 package de.adesso.model;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "demo_bibliothikar")
 public class Bibliothikar extends Person {
 
-    @Column(name = "objektAdresse")
-    private String objektAdresse;
+	private static final long serialVersionUID = 1L;
 
-    @Enumerated(value = EnumType.ORDINAL)
-    @Column(name = "bereich")
-    private Bereich bereich;
+	@Column(name = "objektAdresse")
+	private String objektAdresse;
 
-    public String getObjektAdresse() {
-        return objektAdresse;
-    }
+	@Enumerated(value = EnumType.ORDINAL)
+	@Column(name = "bereich")
+	private Bereich bereich;
 
-    public void setObjektAdresse(String objektadresse) {
-        this.objektAdresse = objektadresse;
-    }
+	public String getObjektAdresse() {
+		return objektAdresse;
+	}
 
-    public Bereich getBereich() {
-        return bereich;
-    }
+	public void setObjektAdresse(String objektadresse) {
+		this.objektAdresse = objektadresse;
+	}
 
-    public void setBereich(Bereich bereich) {
-        this.bereich = bereich;
-    }
+	public Bereich getBereich() {
+		return bereich;
+	}
 
+	public void setBereich(Bereich bereich) {
+		this.bereich = bereich;
+	}
 
 }

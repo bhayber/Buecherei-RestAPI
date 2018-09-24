@@ -1,49 +1,60 @@
 package de.adesso.model;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Table(name = "demo_book_verlag")
 public class Book_Verlag implements Serializable {
 
-    @Column(name = "verDatum")
-    private Date verDatum;
+	private static final long serialVersionUID = 1L;
 
-    @Id
-    @ManyToOne
-    @JoinColumn(name = "fk_book", referencedColumnName = "id")
-    private Book book;
+	@JsonFormat(pattern = "dd/MM/yyyy")
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	private Date verDatum;
 
-    @Id
-    @ManyToOne
-    @JoinColumn(name = "fk_verlag", referencedColumnName = "id")
-    private Verlag verlag;
+	@Id
+	@ManyToOne
+	@JoinColumn(name = "fk_book", referencedColumnName = "id")
+	private Book book;
 
-    public Date getVerDatum() {
-        return verDatum;
-    }
+	@Id
+	@ManyToOne
+	@JoinColumn(name = "fk_verlag", referencedColumnName = "id")
+	private Verlag verlag;
 
-    public void setVerDatum(Date verDatum) {
-        this.verDatum = verDatum;
-    }
+	public Date getVerDatum() {
+		return verDatum;
+	}
 
-    public Book getBook() {
-        return book;
-    }
+	public void setVerDatum(Date verDatum) {
+		this.verDatum = verDatum;
+	}
 
-    public void setBook(Book book) {
-        this.book = book;
-    }
+	public Book getBook() {
+		return book;
+	}
 
-    public Verlag getVerlag() {
-        return verlag;
-    }
+	public void setBook(Book book) {
+		this.book = book;
+	}
 
-    public void setVerlag(Verlag verlag) {
-        this.verlag = verlag;
-    }
+	public Verlag getVerlag() {
+		return verlag;
+	}
 
+	public void setVerlag(Verlag verlag) {
+		this.verlag = verlag;
+	}
 
 }

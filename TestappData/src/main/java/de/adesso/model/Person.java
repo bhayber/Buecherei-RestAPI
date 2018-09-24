@@ -1,113 +1,119 @@
 package de.adesso.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import org.springframework.format.annotation.DateTimeFormat;
+import static javax.persistence.EnumType.ORDINAL;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-import static javax.persistence.EnumType.ORDINAL;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Enumerated;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Table(name = "demo_person")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Person extends EntityBase implements Serializable {
 
-    @Column(name = "name", nullable = false)
-    private String name;
+	private static final long serialVersionUID = 1L;
 
-    @Column(name = "email", nullable = false, unique = true)
-    private String email;
+	@Column(name = "name", nullable = false)
+	private String name;
 
-    @Column
-    private String telmobile;
+	@Column(name = "email", nullable = false, unique = true)
+	private String email;
 
-    @Column(name = "gebDatum", nullable = true)
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private Date gebDatum;
+	@Column
+	private String telmobile;
 
-    @Column(name = "adresse")
-    private String adresse;
+	@Column(name = "gebDatum", nullable = true)
+	@JsonFormat(pattern = "dd/MM/yyyy")
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	private Date gebDatum;
 
-    @Column(name = "password")
-    private String password;
+	@Column(name = "adresse")
+	private String adresse;
 
-    @Column
-    @Enumerated(ORDINAL)
-    private Geschlecht geschlecht;
+	@Column(name = "password")
+	private String password;
 
-    public String getPassword() {
-        return password;
-    }
+	@Column
+	@Enumerated(ORDINAL)
+	private Geschlecht geschlecht;
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public String getPassword() {
+		return password;
+	}
 
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public Person(Person person) {
-        super();
-        this.adresse = person.adresse;
-        this.email = person.email;
-        this.gebDatum = person.gebDatum;
-        this.name = person.name;
-        this.telmobile = person.telmobile;
-    }
+	public Person(Person person) {
+		super();
+		this.adresse = person.adresse;
+		this.email = person.email;
+		this.gebDatum = person.gebDatum;
+		this.name = person.name;
+		this.telmobile = person.telmobile;
+	}
 
-    public Person() {
+	public Person() {
 
-    }
+	}
 
-    public Date getGebDatum() {
-        return gebDatum;
-    }
+	public Date getGebDatum() {
+		return gebDatum;
+	}
 
-    public void setGebDatum(Date gebDatum) {
-        this.gebDatum = gebDatum;
-    }
+	public void setGebDatum(Date gebDatum) {
+		this.gebDatum = gebDatum;
+	}
 
-    public String getAdresse() {
-        return adresse;
-    }
+	public String getAdresse() {
+		return adresse;
+	}
 
-    public void setAdresse(String adresse) {
-        this.adresse = adresse;
-    }
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
+	}
 
+	public Geschlecht getGeschlecht() {
+		return geschlecht;
+	}
 
+	public void setGeschlecht(Geschlecht geschlecht) {
+		this.geschlecht = geschlecht;
+	}
 
-    public Geschlecht getGeschlecht() {
-        return geschlecht;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setGeschlecht(Geschlecht geschlecht) {
-        this.geschlecht = geschlecht;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public String getTelmobile() {
+		return telmobile;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getTelmobile() {
-        return telmobile;
-    }
-
-    public void setTelmobile(String telmobile) {
-        this.telmobile = telmobile;
-    }
+	public void setTelmobile(String telmobile) {
+		this.telmobile = telmobile;
+	}
 
 }
