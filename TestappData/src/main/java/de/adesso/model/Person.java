@@ -21,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Person extends EntityBase implements Serializable {
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -2552517096288854501L;
 
 	@Column(name = "name", nullable = false)
 	private String name;
