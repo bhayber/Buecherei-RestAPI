@@ -1,113 +1,113 @@
 package de.adesso.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonFormat;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.*;
-import java.util.Date;
-import java.util.Set;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Table(name = "demo_book")
 public class Book extends EntityBase {
 
-    @Column(name = "titel", nullable = false)
-    private String titel;
+	private static final long serialVersionUID = -2988774184945522811L;
 
-    @Column(name = "isbnr", nullable = false)
-    private String isbnr;
+	@Column(name = "artNr", nullable = false, unique = true)
+	private String articleNumber;
 
-    @Column(name = "abgabeDatum")
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private Date abgabeDatum;
+	@Column(name = "titel", nullable = false)
+	private String titel;
 
-    @Column(name = "ausleihDatum")
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private Date ausleihDatum;
+	@Column(name = "isbnr", nullable = false)
+	private String isbnr;
 
-    @Column(name = "abgabefristDatum")
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private Date abgabefristDatum;
+	@Column(name = "abgabeDatum")
+	@JsonFormat(pattern = "dd/MM/yyyy")
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	private Date abgabeDatum;
 
-    @ManyToOne
-    @JoinColumn(name = "FK_Kunde")
-    @JsonBackReference // Damit es nicht zu einer Rückkoplung führt und eine unendliche JSON Datei ausgegeben wird
-    private Kunde kunde;
+	@Column(name = "ausleihDatum")
+	@JsonFormat(pattern = "dd/MM/yyyy")
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	private Date ausleihDatum;
 
-    @OneToMany(mappedBy = "book", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Book_Verlag> bookVerlag;
-    @OneToOne
-    @JoinColumn(name = "fk_genreID")
-    private StammBookGenre genre;
+	@Column(name = "abgabefristDatum")
+	@JsonFormat(pattern = "dd/MM/yyyy")
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	private Date abgabefristDatum;
 
-    public StammBookGenre getGenre() {
-        return genre;
-    }
+	@ManyToOne
+	@JoinColumn(name = "FK_Kunde")
+	@JsonBackReference // Damit es nicht zu einer Rückkoplung führt und eine unendliche JSON Datei
+						// ausgegeben wird
+	private Kunde kunde;
 
-    public void setGenre(StammBookGenre genre) {
-        this.genre = genre;
-    }
+	@OneToOne
+	@JoinColumn(name = "fk_genreID")
+	private StammBookGenre genre;
+	
+	public StammBookGenre getGenre() {
+		return genre;
+	}
 
-    public Date getAbgabefristDatum() {
-        return abgabefristDatum;
-    }
+	public void setGenre(StammBookGenre genre) {
+		this.genre = genre;
+	}
 
-    public void setAbgabefristDatum(Date abgabefristDatum) {
-        this.abgabefristDatum = abgabefristDatum;
-    }
+	public Date getAbgabefristDatum() {
+		return abgabefristDatum;
+	}
 
-    public Set<Book_Verlag> getBookVerlag() {
-        return bookVerlag;
-    }
+	public void setAbgabefristDatum(Date abgabefristDatum) {
+		this.abgabefristDatum = abgabefristDatum;
+	}
 
-    public void setBookVerlag(Set<Book_Verlag> bookVerlag) {
-        this.bookVerlag = bookVerlag;
-    }
+	public Kunde getKunde() {
+		return kunde;
+	}
 
+	public void setKunde(Kunde kunde) {
+		this.kunde = kunde;
+	}
 
-    public Kunde getKunde() {
-        return kunde;
-    }
+	public String getIsbnr() {
+		return isbnr;
+	}
 
-    public void setKunde(Kunde kunde) {
-        this.kunde = kunde;
-    }
+	public void setIsbnr(String isbnr) {
+		this.isbnr = isbnr;
+	}
 
+	public String getTitel() {
+		return titel;
+	}
 
-    public String getIsbnr() {
-        return isbnr;
-    }
+	public void setTitel(String titel) {
+		this.titel = titel;
+	}
 
-    public void setIsbnr(String isbnr) {
-        this.isbnr = isbnr;
-    }
+	public Date getAbgabeDatum() {
+		return abgabeDatum;
+	}
 
-    public String getTitel() {
-        return titel;
-    }
+	public void setAbgabeDatum(Date abgabeDatum) {
+		this.abgabeDatum = abgabeDatum;
+	}
 
-    public void setTitel(String titel) {
-        this.titel = titel;
-    }
+	public Date getAusleihDatum() {
+		return ausleihDatum;
+	}
 
-    public Date getAbgabeDatum() {
-        return abgabeDatum;
-    }
-
-    public void setAbgabeDatum(Date abgabeDatum) {
-        this.abgabeDatum = abgabeDatum;
-    }
-
-    public Date getAusleihDatum() {
-        return ausleihDatum;
-    }
-
-    public void setAusleihDatum(Date ausleihDatum) {
-        this.ausleihDatum = ausleihDatum;
-    }
+	public void setAusleihDatum(Date ausleihDatum) {
+		this.ausleihDatum = ausleihDatum;
+	}
 
 }

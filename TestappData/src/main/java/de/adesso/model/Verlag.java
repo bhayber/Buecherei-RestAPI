@@ -1,15 +1,14 @@
 package de.adesso.model;
 
-import java.util.Set;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "demo_verlag")
 public class Verlag extends EntityBase {
+
+	private static final long serialVersionUID = 67877853931313942L;
 
 	@Column(name = "name", nullable = false)
 	private String name;
@@ -19,17 +18,6 @@ public class Verlag extends EntityBase {
 
 	@Column(name = "jahrlUmsatz")
 	private double jahrlUmsatz;
-
-	@OneToMany(mappedBy = "verlag")
-	private Set<Book_Verlag> bookVerlag;
-
-	public Set<Book_Verlag> getBookVerlag() {
-		return bookVerlag;
-	}
-
-	public void setBookVerlag(Set<Book_Verlag> bookVerlag) {
-		this.bookVerlag = bookVerlag;
-	}
 
 	public String getName() {
 		return name;
