@@ -51,8 +51,12 @@ public class Book extends EntityBase {
 	private Kunde kunde;
 
 	@OneToOne
-	@JoinColumn(name = "fk_genreID")
+	@JoinColumn(name = "FK__GenreID")
 	private StammBookGenre genre;
+
+	@ManyToOne
+	@JoinColumn(name = "FK_Verlag")
+	private Verlag verlag;
 
 	public StammBookGenre getGenre() {
 		return genre;
@@ -123,6 +127,20 @@ public class Book extends EntityBase {
 	 */
 	public void setArticleNumber(String articleNumber) {
 		this.articleNumber = articleNumber;
+	}
+
+	/**
+	 * @return the verlag
+	 */
+	public Verlag getVerlag() {
+		return verlag;
+	}
+
+	/**
+	 * @param verlag the verlag to set
+	 */
+	public void setVerlag(Verlag verlag) {
+		this.verlag = verlag;
 	}
 
 }
