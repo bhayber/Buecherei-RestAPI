@@ -8,16 +8,17 @@ import javax.persistence.Table;
 @Table(name = "demo_StammBookGenre")
 public class StammBookGenre extends EntityBase {
 
-    @Column(name = "bezeichnung", nullable = false)
-    private String bezeichnung;
+	private static final long serialVersionUID = -3820065532724559323L;
 
-    public String getBezeichnung() {
-        return bezeichnung;
-    }
+	@Column(name = "bezeichnung", nullable = false)
+	private String bezeichnung;
 
-    public void setBezeichnung(String bezeichnung) {
-        this.bezeichnung = bezeichnung;
-    }
+	public String getBezeichnung() {
+		return bezeichnung;
+	}
 
+	public void setBezeichnung(String bezeichnung) {
+		this.bezeichnung = bezeichnung;
+	}
 
 }

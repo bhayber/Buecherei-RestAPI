@@ -53,7 +53,7 @@ public class Book extends EntityBase {
 	@OneToOne
 	@JoinColumn(name = "fk_genreID")
 	private StammBookGenre genre;
-	
+
 	public StammBookGenre getGenre() {
 		return genre;
 	}
@@ -108,6 +108,21 @@ public class Book extends EntityBase {
 
 	public void setAusleihDatum(Date ausleihDatum) {
 		this.ausleihDatum = ausleihDatum;
+	}
+
+	/**
+	 * @return the articleNumber
+	 */
+	public String getArticleNumber() {
+		return articleNumber;
+	}
+
+	/**
+	 * @param articleNumber
+	 *            the articleNumber to set
+	 */
+	public void setArticleNumber(String articleNumber) {
+		this.articleNumber = articleNumber;
 	}
 
 }
