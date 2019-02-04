@@ -3,6 +3,9 @@
 	<name>TestApp</name>
 	<comment></comment>
 	<projects>
+		<project>TestApp-Api</project>
+		<project>TestApp-Business</project>
+		<project>Testapp-Data</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

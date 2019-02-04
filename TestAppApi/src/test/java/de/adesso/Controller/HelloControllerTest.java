@@ -1,6 +1,8 @@
 package de.adesso.Controller;
 
-import de.adesso.start.App;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,9 +22,13 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import de.adesso.start.App;
 
+/**
+ * IntegrationsTest
+ *
+ * @author Burhan Hayber
+ */
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration
@@ -30,30 +36,29 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(classes = App.class)
 public class HelloControllerTest {
 
-    @Autowired
-    WebApplicationContext context;
+	@Autowired
+	WebApplicationContext context;
 
-    Authentication authentication;
-    private MockMvc mvc;
+	Authentication authentication;
+	private MockMvc mvc;
 
-    @Before
-    public void setup() {
-        mvc = MockMvcBuilders.webAppContextSetup(context).build();
-        authentication = new TestingAuthenticationToken("admin", "secret",
-                AuthorityUtils.createAuthorityList("ROLE_USER"));
-        SecurityContextHolder.getContext().setAuthentication(authentication);
-    }
+	@Before
+	public void setup() {
+		mvc = MockMvcBuilders.webAppContextSetup(context).build();
+		authentication = new TestingAuthenticationToken("admin", "secret",
+				AuthorityUtils.createAuthorityList("ROLE_USER"));
+		SecurityContextHolder.getContext().setAuthentication(authentication);
+	}
 
-    @After
-    public void cleanup() {
-        SecurityContextHolder.clearContext();
-    }
+	@After
+	public void cleanup() {
+		SecurityContextHolder.clearContext();
+	}
 
-    @Test
-    public void CheckHelloControllerForMessage() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.request(HttpMethod.GET, "/HelloWorld")).andExpect(status().isOk())
-                .andExpect(content().string(("<h1>Hello World !</h1>")));
-    }
-
+	@Test
+	public void CheckHelloControllerForMessage() throws Exception {
+		mvc.perform(MockMvcRequestBuilders.request(HttpMethod.GET, "/HelloWorld")).andExpect(status().isOk())
+				.andExpect(content().string(("<h1>Hello World !</h1>")));
+	}
 
 }
