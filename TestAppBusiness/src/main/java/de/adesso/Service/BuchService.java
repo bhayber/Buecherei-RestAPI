@@ -85,14 +85,11 @@ public class BuchService {
 	}
 
 	public String createBuch(Book book) {
-		Book newBook = new Book();
 		try {
-			newBook.setTitel(book.getTitel());
-			newBook.setIsbnr(book.getIsbnr());
-			bookRepository.save(newBook);
+			bookRepository.save(book);
 		} catch (Exception ex) {
-			return "Error creating the Book: " + ex.toString() + newBook.getId();
+			return "Error creating the Book: " + ex.toString();
 		}
-		return "Book succesfully created with id = " + newBook.getId();
+		return "Book succesfully created with id = " + book.getId();
 	}
 }
