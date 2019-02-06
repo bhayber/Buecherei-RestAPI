@@ -51,7 +51,7 @@ public class Book extends EntityBase {
 	private Kunde kunde;
 
 	@OneToOne
-	@JoinColumn(name = "FK__GenreID")
+	@JoinColumn(name = "FK_GenreID")
 	private StammBookGenre genre;
 
 	@ManyToOne
@@ -122,8 +122,7 @@ public class Book extends EntityBase {
 	}
 
 	/**
-	 * @param articleNumber
-	 *            the articleNumber to set
+	 * @param articleNumber the articleNumber to set
 	 */
 	public void setArticleNumber(String articleNumber) {
 		this.articleNumber = articleNumber;
