@@ -6,7 +6,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -50,7 +49,7 @@ public class Book extends EntityBase {
 						// ausgegeben wird
 	private Kunde kunde;
 
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name = "FK_GenreID")
 	private StammBookGenre genre;
 
