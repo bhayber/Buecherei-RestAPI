@@ -1,5 +1,7 @@
 package de.adesso.start;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,6 +19,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJpaAuditing
 public class App implements CommandLineRunner {
 
+	private static final Logger logger = LogManager.getLogger(App.class);
+
 	public static void main(String[] args) {
 
 		SpringApplication.run(App.class, args);
@@ -24,6 +28,6 @@ public class App implements CommandLineRunner {
 
 	@Override
 	public void run(String... strings) throws Exception {
-
+		logger.info("Programm wurde gestartet", this);
 	}
 }
