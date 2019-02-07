@@ -17,24 +17,22 @@
 			<PatternLayout>
 				<Pattern>${LOG_PATTERN}</Pattern>
 			</PatternLayout>
-			<Policies>
-			
+			<Policies>			
  			<SizeBasedTriggeringPolicy size="10MB" />
 			</Policies>
 			<DefaultRolloverStrategy max="10" />
 		</RollingFile>
 	</Appenders>
 	<Loggers>
-		<Logger name="de.adesso" level="debug" additivity="false">
-			<AppenderRef ref="ConsoleAppender" />
-		</Logger>
 
-		<Logger name="de.adesso" level="info" additivity="false">
-			<AppenderRef ref="FileAppender" />
-		</Logger>
+	<Logger name="*" level="debug" additivity="false">
+		<AppenderRef ref="FileAppender" level="info" />
+		<AppenderRef ref="ConsoleAppender" level="debug" />
+	</Logger>
 
-		<Root level="info">
-		<AppenderRef ref="ConsoleAppender"/>
-		</Root>
+	<Root level="debug">
+		<AppenderRef ref="ConsoleAppender" />
+		<AppenderRef ref="FileAppender" />
+	</Root>
 	</Loggers>
 </Configuration>
