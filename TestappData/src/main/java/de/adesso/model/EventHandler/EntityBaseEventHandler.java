@@ -23,13 +23,13 @@ public class EntityBaseEventHandler {
 	@PrePersist
 	public void prePersist(Object object) {
 		EntityBase entityBase = (EntityBase) object;
-		logger.debug("Vor dem Persistieren EntityBase Entity : {}", entityBase);
+		logger.info("Vor dem Persistieren EntityBase Entity : {}", entityBase);
 	}
 
 	@PostPersist
 	public void postPersist(Object object) {
 		EntityBase entityBase = (EntityBase) object;
-		logger.debug("Nach dem Persistieren EntityBase Entity : {}", entityBase);
+		logger.info("Nach dem Persistieren EntityBase Entity : {}", entityBase);
 	}
 
 }
