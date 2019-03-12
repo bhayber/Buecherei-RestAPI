@@ -9,12 +9,12 @@
     </parent>
 
     <dependencies>
-
+	
         <dependency>
             <groupId>org.apache.derby</groupId>
             <artifactId>derby</artifactId>
-            <version>10.13.1.1</version>
         </dependency>
+        
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
@@ -33,7 +33,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>4.3.9.RELEASE</version>
             <scope>test</scope>
         </dependency>
 
@@ -42,8 +41,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>Testapp-Data</artifactId>
-    <groupId>com.test</groupId>
-    <version>1.0-SNAPSHOT</version>
 
     <packaging>jar</packaging>
 

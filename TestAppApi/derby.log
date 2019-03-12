@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Thu Feb 07 14:44:53 CET 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0168-c834-3c72-000015e2f868 
-on database directory memory:C:\dev\sourcen\Buecherei-RestAPI\TestAppApi\myDB with class loader sun.misc.Launcher$AppClassLoader@723279cf 
+Tue Mar 12 17:24:02 CET 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0169-72b7-ce24-00001785b968 
+on database directory memory:C:\dev\sourcen\Buecherei-RestAPI\TestAppApi\myDB with class loader sun.misc.Launcher$AppClassLoader@4aa298b7 
 Loaded from file:/C:/Users/hayber/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_131-b11
